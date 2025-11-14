@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Задание 2 — Анимация</title>
+  <link rel="icon" type="image/x-icon" href="../main/GG-icon.ico">
+  <link rel="stylesheet" href="../main/style.css">
+  <link rel="stylesheet" href="animation_style.css">
+  <style>
+    body {
+      padding-top: 60px;
+    }
+    .task-content {
+      padding: 2rem;
+      background-color: #f7f7f7;
+      min-height: calc(100vh - 60px - 80px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .task-content .scene-wrapper {
+      width: 100%;
+      height: auto;
+      min-height: 400px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav">
+        <li><a href="../main/index.html">ГЛАВНАЯ</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">ЗАДАНИЯ</a>
+          <ul class="dropdown-menu">
+            <li><a href="../ship/ship.html">Рисунок</a></li>
+            <li><a href="car.html">Анимация</a></li>
+            <li><a href="../js_work/index.html">Основы JavaScript</a></li>
+            <li><a href="../dom-тест/index.html">DOM-Тест</a></li>
+            <li><a href="../words/index.html">Слова</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="task-content">
+    <div class="scene-wrapper">
+      <div class="scene">
+        <div class="car-container">
+          <div class="car-base">
+            <img src="../images/car_profile.png" class="car" alt="car">
+            <div class="wheels">
+              <img src="../images/wheel.png" class="wheel" alt="wheel">
+              <img src="../images/wheel.png" class="wheel" alt="wheel">
+            </div>
+          </div>
+
+          <div class="squirrel">
+            <img src="../images/squirrel_head.png" class="squirrel-head" alt="squirrel head">
+            <img src="../images/squirrel_full.png" class="squirrel-full" alt="squirrel full">
+          </div>
+
+          <div class="label"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Хасанов Тимур, 2025</p>
+  </footer>
+</body>
+</html>

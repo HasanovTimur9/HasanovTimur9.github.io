@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetGoodFitness</title>
+    <link rel="icon" type="image/x-icon" href="GG-icon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav">
+              <li><a href="#main">ГЛАВНАЯ</a></li>
+              <li><a href="#gallery">ГАЛЕРЕЯ</a></li>
+              <li><a href="#application">ЗАЯВКА</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle">ЗАДАНИЯ</a>
+                <ul class="dropdown-menu">
+                  <li><a href="../ship/ship.html">Рисунок</a></li>
+                  <li><a href="../car/car.html">Анимация</a></li>
+                  <li><a href="../js_work/index.html">Основы JavaScript</a></li>
+                  <li><a href="../dom-тест/index.html">DOM-Тест</a></li>
+                  <li><a href="../words/index.html">Слова</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+    </header>
+    
+    
+    <section class="brand-bar">
+        <div class="brand-left">
+            <span class="motivational-text">ТВОЯ СИЛА — НАША РАБОТА</span>
+        </div>
+        <div class="brand-center">
+            <div class="logo"></div>
+            <h1 class="brand"><span class="brand-dark">GetGood</span><span class="brand-green">Fitness</span></h1>
+        </div>
+        <div class="brand-right">
+            <a href="tel:+79991234567" class="phone-number">+7 (999) 123-45-67</a>
+        </div>
+    </section>
+
+    <section id="main" class="main-section">
+        <div class="area-stats">
+            <div class="stat-card">
+                <div class="stat-title">Площадь клуба</div>
+                <div class="stat-value">2 000 m<sup>2</sup></div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-title">Тренажёрный зал</div>
+                <div class="stat-value">950 m<sup>2</sup></div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-title">Групповые залы</div>
+                <div class="stat-value">350 m<sup>2</sup></div>
+            </div>
+        </div>
+        <div class="main-content">
+            <h1>GetGoodFitness</h1>
+            <p class="address">ул. Пушкина, 64, 1 этаж</p>
+            <div class="schedule">
+                <div class="schedule-item">Пн-Пт: 07.00 - 00.00</div>
+                <div class="schedule-item">Сб-Вс: 09.00 - 23.00</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="about-card">
+            <h2 class="about-heading">Добро пожаловать в GetGoodFitness – ваш идеальный фитнес-клуб, где здоровье и благополучие становятся приоритетом. Мы предлагаем вам уникальный подход к тренировкам, который поможет вам достичь желаемых результатов.</h2>
+            <h3>Современное оборудование и комфортные зоны</h3>
+            <p>Наш клуб оснащен премиальной линейкой оборудования и удобно разделен на специализированные зоны: функционального тренинга, кроссфита, кардио и свободных весов. Просторный зал спроектирован с учетом самых высоких стандартов, что обеспечивает комфорт и эффективность ваших тренировок.</p>
+            <h3>Эмоциональный комфорт и мотивация</h3>
+            <p>В GetGoodFitness вы не только получите доступ к эффективным тренировкам, но и ощутите невероятное чувство свободы. Мы создаем атмосферу, в которой занятия спортом превращаются в приятное событие, а эмоциональный комфорт становится вашим лучшим мотиватором.</p>
+            <h3>Поддержка профессионалов</h3>
+            <p>Наши высококвалифицированные тренеры всегда готовы оказать вам всестороннюю поддержку на пути к вашим фитнес-целям. С их помощью вы сможете создать красивое и сильное тело, улучшив свое здоровье и общее самочувствие. Присоединяйтесь к нам!</p>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+        <h2 class="gallery-title">ГАЛЕРЕЯ</h2>
+        <div class="slider">
+            <button class="slider-btn slider-btn--prev" aria-label="Предыдущий слайд">❮</button>
+            <div class="slider-viewport">
+                <div class="slider-track">
+                    <div class="slide"><img src="1.jpg" alt="Спортзал" loading="lazy"></div>
+                    <div class="slide"><img src="2.jpg" alt="Зал 1" loading="lazy"></div>
+                    <div class="slide"><img src="3.jpg" alt="Зал 2" loading="lazy"></div>
+                    <div class="slide"><img src="4.jpg" alt="Зал 3" loading="lazy"></div>
+                    <div class="slide"><img src="5.jpg" alt="Зал 4" loading="lazy"></div>
+                </div>
+            </div>
+            <button class="slider-btn slider-btn--next">❯</button>
+        </div>
+        <p class="gallery-description">
+            Современный фитнес-клуб с высококлассным оборудованием и просторными залами для групповых тренировок. 
+            Широкие кардио- и функциональные зоны, а также отдельная зона для единоборств.
+        </p>
+    </section>
+
+    <section id="plan" class="plan-section">
+        <h2 class="plan-title">СХЕМА ФИТНЕС-КЛУБА</h2>
+        <div class="plan-image-wrap">
+            <img src="schema.png" alt="Схема фитнес-клуба" loading="lazy">
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing-section">
+        <div class="pricing-header">
+            <h2 class="pricing-title">ТАРИФЫ</h2>
+            <p class="pricing-contact">Связаться с отделом продаж: <a href="tel:+79991234567">+7 (999) 123-45-67</a></p>
+        </div>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h3 class="pricing-name">1 МЕСЯЦ</h3>
+                <div class="pricing-price">
+                    <span class="price-old">1 995 ₽</span>
+                    <span class="price-new">1 495 ₽</span>
+                </div>
+                <ul class="pricing-features">
+                    <li>Безлимитный доступ</li>
+                    <li>Групповые тренировки</li>
+                    <li>Базовая консультация тренера</li>
+                </ul>
+                <button class="pricing-cta">Выбрать</button>
+            </div>
+
+            <div class="pricing-card pricing-card--highlight">
+                <div class="badge">-20%</div>
+                <h3 class="pricing-name">6 МЕСЯЦЕВ</h3>
+                <div class="pricing-price">
+                    <span class="price-old">9 995 ₽</span>
+                    <span class="price-new">7 995 ₽</span>
+                </div>
+                <ul class="pricing-features">
+                    <li>Безлимитный доступ</li>
+                    <li>Групповые тренировки</li>
+                    <li>2 персональные консультации</li>
+                </ul>
+                <button class="pricing-cta">Выбрать</button>
+            </div>
+
+            <div class="pricing-card">
+                <h3 class="pricing-name">12 МЕСЯЦЕВ</h3>
+                <div class="pricing-price">
+                    <span class="price-old">17 495 ₽</span>
+                    <span class="price-new">13 995 ₽</span>
+                </div>
+                <ul class="pricing-features">
+                    <li>Безлимитный доступ</li>
+                    <li>Групповые тренировки</li>
+                    <li>4 персональные консультации</li>
+                </ul>
+                <button class="pricing-cta">Выбрать</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="application" class="application-section">
+        <h2>ПЕРВОЕ ПОСЕЩЕНИЕ - БЕСПЛАТНО</h2>
+        <p class="application-subtitle">Попробуйте тренажёры, оцените атмосферу и получите персональные рекомендации — без оплаты.</p>
+        <div class="application-perks">
+            <span class="perk">Экскурсия по клубу</span>
+            <span class="perk">Персональная консультация</span>
+            <span class="perk">Индивидуальный план старта</span>
+        </div>
+        <div class="application-card">
+            <form>
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="tel" placeholder="Ваш номер телефона" required>
+                <button type="submit">Записаться</button>
+            </form>
+            <p class="application-note">Нажимая «Записаться», вы соглашаетесь с политикой конфиденциальности</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Хасанов Тимур, 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

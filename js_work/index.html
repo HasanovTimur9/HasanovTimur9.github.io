@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Основы JavaScript</title>
+    <link rel="icon" type="image/x-icon" href="../main/GG-icon.ico">
+    <link rel="stylesheet" href="../main/style.css">
+    <style>
+        body {
+            padding-top: 60px;
+        }
+        .task-content {
+            padding: 2rem;
+            background-color: #f7f7f7;
+            min-height: calc(100vh - 60px - 80px);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .task-content h1 {
+            color: var(--dark-gray);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .task-content label {
+            display: block;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            color: var(--dark-gray);
+        }
+        .task-content input {
+            padding: 0.75rem;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            font-size: 1rem;
+            margin-left: 0.5rem;
+            width: 150px;
+        }
+        .task-content button {
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 8px;
+            background-color: var(--primary-green);
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: opacity 0.2s ease;
+            margin-bottom: 2rem;
+        }
+        .task-content button:hover {
+            opacity: 0.9;
+        }
+        #result {
+            margin-top: 1.5rem;
+            font-size: 1.1rem;
+            color: var(--dark-gray);
+            min-height: 2rem;
+        }
+        #image {
+            margin-top: 1.5rem;
+            text-align: center;
+        }
+        #image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav">
+                <li><a href="../main/index.html">ГЛАВНАЯ</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">ЗАДАНИЯ</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../ship/ship.html">Рисунок</a></li>
+                        <li><a href="../car/car.html">Анимация</a></li>
+                        <li><a href="index.html">Основы JavaScript</a></li>
+                        <li><a href="../dom-тест/index.html">DOM-Тест</a></li>
+                        <li><a href="../words/index.html">Слова</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="task-content">
+        <h1>Бытовая техника</h1>
+
+        <label>Ваш возраст:
+            <input type="number" id="age" min="1">
+        </label>
+        
+        <button id="btnChoose">Выбрать</button>
+
+        <div id="result"></div>
+        <div id="image"></div>
+    </main>
+
+    <footer>
+        <p>Хасанов Тимур, 2025</p>
+    </footer>
+
+    <script defer src="script.js"></script>
+</body>
+</html>
