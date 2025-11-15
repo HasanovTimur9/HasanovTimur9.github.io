@@ -115,6 +115,7 @@ body {
 
 .left-zone {
     position: relative;
+    overflow: hidden;
 }
 
 .chip-container.drag-over {

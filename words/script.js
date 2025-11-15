@@ -156,12 +156,16 @@ function handleDrop(event) {
         chip.setAttribute('data-zone', 'left');
         
         var zoneRect = leftZone.getBoundingClientRect();
-        var x = event.clientX - zoneRect.left - 50;
-        var y = event.clientY - zoneRect.top - 20;
-        
-        if (x < 0) x = 10;
-        if (y < 0) y = 10;
-        
+        var chipRect = chip.getBoundingClientRect();
+
+        var x = event.clientX - zoneRect.left - chipRect.width / 2;
+        var y = event.clientY - zoneRect.top - chipRect.height / 2;
+
+        if (x < 0) x = 0;
+        if (y < 0) y = 0;
+        if (x > zoneRect.width - chipRect.width) x = zoneRect.width - chipRect.width;
+        if (y > zoneRect.height - chipRect.height) y = zoneRect.height - chipRect.height;
+
         chip.style.position = 'absolute';
         chip.style.left = x + 'px';
         chip.style.top = y + 'px';
