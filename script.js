@@ -1,4 +1,3 @@
-// Гамбургер меню
 document.addEventListener('DOMContentLoaded', () => {
     const hamburgerMenu = document.getElementById('hamburgerMenu');
     const hamburgerNav = document.getElementById('hamburgerNav');
@@ -10,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
             hamburgerNav.classList.toggle('active');
         });
         
-        // Закрытие меню при клике вне его
         document.addEventListener('click', (e) => {
             if (hamburgerNav.classList.contains('active') && 
                 !hamburgerNav.contains(e.target) && 
@@ -20,18 +18,16 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
         
-        // Закрытие меню при клике на ссылку
         hamburgerNav.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
-                // Не закрываем меню при клике на "Задания" (для выпадающего подменю)
+
                 if (!link.classList.contains('dropdown-toggle')) {
                     hamburgerMenu.classList.remove('active');
                     hamburgerNav.classList.remove('active');
                 }
             });
         });
-        
-        // Обработка выпадающего меню "Задания" в гамбургер-меню
+
         const dropdownToggle = hamburgerNav.querySelector('.dropdown-toggle');
         if (dropdownToggle) {
             dropdownToggle.addEventListener('click', (e) => {
