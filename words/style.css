@@ -139,6 +139,10 @@ body {
     cursor: grabbing;
 }
 
+.chip.dragging {
+    opacity: 0.5;
+}
+
 .chip-key {
     padding: 2px 6px;
     font-size: 12px;
