@@ -65,7 +65,6 @@ nav {
     margin-left: auto;
 }
 
-/* Гамбургер меню */
 .hamburger-menu {
     display: flex;
     flex-direction: column;
@@ -164,7 +163,6 @@ nav {
     font-size: 0.7rem;
 }
 
-/* Обычное меню (для страниц заданий) */
 .nav {
     display: flex;
     align-items: center;
@@ -226,7 +224,6 @@ nav {
     transform: translateY(0);
 }
 
-/* Для гамбургер меню - показывать выпадающее меню при клике */
 .hamburger-nav .dropdown {
     position: relative;
 }
