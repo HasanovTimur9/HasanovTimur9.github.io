@@ -128,7 +128,7 @@ function handleAnswer(selectedIndex, correctIndex, questionBlock, answersDiv, ex
         expl.textContent = explanation;
         correctBlock.appendChild(expl);
     } else {
-        marker.textContent = 'No(';
+        marker.textContent = 'X';
         marker.classList.add('wrong-marker');
        
         const selectedBlock = answersDiv.children[selectedIndex];

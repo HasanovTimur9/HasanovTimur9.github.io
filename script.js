@@ -1,3 +1,49 @@
+// Гамбургер меню
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburgerMenu = document.getElementById('hamburgerMenu');
+    const hamburgerNav = document.getElementById('hamburgerNav');
+    
+    if (hamburgerMenu && hamburgerNav) {
+        hamburgerMenu.addEventListener('click', (e) => {
+            e.stopPropagation();
+            hamburgerMenu.classList.toggle('active');
+            hamburgerNav.classList.toggle('active');
+        });
+        
+        // Закрытие меню при клике вне его
+        document.addEventListener('click', (e) => {
+            if (hamburgerNav.classList.contains('active') && 
+                !hamburgerNav.contains(e.target) && 
+                !hamburgerMenu.contains(e.target)) {
+                hamburgerMenu.classList.remove('active');
+                hamburgerNav.classList.remove('active');
+            }
+        });
+        
+        // Закрытие меню при клике на ссылку
+        hamburgerNav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                // Не закрываем меню при клике на "Задания" (для выпадающего подменю)
+                if (!link.classList.contains('dropdown-toggle')) {
+                    hamburgerMenu.classList.remove('active');
+                    hamburgerNav.classList.remove('active');
+                }
+            });
+        });
+        
+        // Обработка выпадающего меню "Задания" в гамбургер-меню
+        const dropdownToggle = hamburgerNav.querySelector('.dropdown-toggle');
+        if (dropdownToggle) {
+            dropdownToggle.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                const dropdown = dropdownToggle.parentElement;
+                dropdown.classList.toggle('active');
+            });
+        }
+    }
+});
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
